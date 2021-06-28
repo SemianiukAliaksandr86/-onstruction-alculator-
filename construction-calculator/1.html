@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="1.css">
+	<script src="1.js" defer></script>
+	<title>Калькулятор</title>
+</head>
+<body>
+	<h1>
+		Калькулятор электромонтажных работ
+	</h1>
+	<div>
+		<table align="right" border="1">
+			<tr>
+				<td colspan="2">
+					<h3>
+						Монтаж кабеля
+					</h3>
+				</td>
+				
+			</tr>
+			<tr>
+				<td><h4>Цена за 1м.п</h4></td>
+				<td><h4>Введите количество (м.)</h4></td>
+			</tr>
+			<tr>
+				<td>
+					0.5 - 4мм<sup>2</sup> - 2р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u1p0" onchange = "onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					6 - 10мм<sup>2</sup> - 3р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u1p1" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					12 - 16мм<sup>2</sup> - 5р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u1p2" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p id="kab">
+					</p>
+				</td>
+			</tr>
+		</table>
+		
+		<table border="1">
+			<tr>
+				<td colspan="2">
+					<h3>
+						Штробы
+					</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h4>
+						Цена за 1м.п.
+					</h4>
+				</td>
+				<td>
+					<h4>
+						Введите количество (м.)
+					</h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Г/с блок 2р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u2p0" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Кирпич 4р.
+				</td>
+				<td>
+					<input type="number" min="0" id="u2p1" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Монолит 6р.
+				</td>
+				<td>
+					<input type="number" min="0" id="u2p2" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p id="sht">
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="tab1">
+		<table border="1" align="right">
+			<tr>
+				<td colspan="2">
+					<h3>
+						Монтаж розеток, выключателей<br>и осветительных приборов
+					</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h4>
+						Цена за 1ед.
+					</h4>
+				</td>
+				<td>
+					<h4>
+						Введите количество (ед.)
+					</h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Розетки и выключатели - 3р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u3p0" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Бра - 10р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u3p1" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Люстры - 30р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u3p2" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p id="ust">
+					</p>
+				</td>
+			</tr>
+		</table>
+
+		<table border="1">
+			<tr>
+				<td colspan="2">
+					<h3>
+						Монтаж и подключение<br>ВРУ
+					</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h4>
+						Цена за 1ед.
+					</h4>
+				</td>
+				<td>
+					<h4>
+						Введите количество (ед.)
+					</h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					12 групп - 30р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u4p0" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					24 группы - 60р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u4p1" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					36 групп - 90р.
+				</td>
+				<td>
+					<input type="number" min="0" id ="u4p2" onchange="onFunc()">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p id="scht">
+					</p>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+		<p id="out" align="center">
+			Итог
+		</p>	
+
+</body>
+</html>
